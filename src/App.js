@@ -11,7 +11,7 @@ export function App() {
       <Banner />
       <CampoTexto label="Nome" placeholder="digite seu nome"/>
       <CampoTexto label="Cargo" placeholder="digite seu cargo"/>
-      <CampoTexto label="Imagem" /> 
+      <CampoTexto label="Imagem" placeholder="digite o endereço da imagem" /> 
     </div>
   );
 }
