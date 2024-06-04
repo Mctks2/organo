@@ -1,6 +1,6 @@
 import "./Banner.css";
 
-function Banner() {
+export function Banner() {
   return (
     <header className="banner">
       <img src="/imagens/banner.png" alt="Organo Banner" />
@@ -8,4 +8,4 @@ function Banner() {
   );
 }
 
-export default Banner;
+
