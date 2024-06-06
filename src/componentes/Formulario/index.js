@@ -10,6 +10,7 @@ export function Formulario(props) {
   const [imagem, setImagem] = useState("");
   const [time, setTime] = useState("");
 
+  // aoSalvar - recebe as propriedades do formulário e passa para o props.aoColaboradorCadastrado e limpa os campos
   const aoSalvar = (evento) => {
     evento.preventDefault();
     props.aoColaboradorCadastrado({
@@ -18,6 +19,10 @@ export function Formulario(props) {
       imagem,
       time
     })
+    setNome('')
+    setCargo('')
+    setImagem('')
+    setTime('')
   };
 
   return (
@@ -47,14 +52,7 @@ export function Formulario(props) {
         <ListaSuspensa
           obrigatorio={true}
           label="Time"
-          itens={[
-            "Programação",
-            "Front-End",
-            "Data Science",
-            "Devops",
-            "UX e Design",
-            "Mobile",
-          ]}
+          itens={props.nomeTimes}
           valor={time}
           aoAlterado={(valor) => setTime(valor)}
         />
