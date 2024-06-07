@@ -46,7 +46,6 @@ export function App() {
 
   //aoColaboradorCadastrado é uma propriedade passada para o Formulario e aoColaboradorAdicionado é uma propriedade passada para o Time 
   const aoNovoColaboradorAdicionado = (colaborador) => {
-    console.log(colaborador);
     setColaboradores([...colaboradores, colaborador]);
   };
 
