@@ -5,8 +5,8 @@ Este projeto é uma aplicação destinada a gerir os colaboradores da Alura, org
 ## 🛠️ Tecnologias utilizadas
 
 - CSS
-- React
-- NODE.JS
+- React.js
+- Node.js
 
 ## 🚧 Layout
 
