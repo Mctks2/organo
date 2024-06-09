@@ -57,7 +57,9 @@ export function Formulario(props) {
           aoAlterado={(valor) => setTime(valor)}
         />
         <Botao>Criar Card</Botao>
+
       </form>
     </section>
+    
   );
 }

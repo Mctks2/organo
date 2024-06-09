@@ -1,19 +1,33 @@
-.time{
+.time {
   text-align: center;
   padding: 32px;
-  background-color: #D9F7E9;
+  background-color: #d9f7e9;
 }
 
-.time h3{
+.time h3 {
+  font-family: "Prata", serif;
   font-size: 32px;
-  border-bottom: 4px solid #57C278;
   display: inline-block;
   padding-bottom: 8px;
+  position: relative;
+  border-bottom: 4px solid;
 }
 
-.time .colaboradores{
+/* Centralizando o underline */
+
+.time h3::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  width: 18%;
+  
+}
+
+.time .colaboradores {
   display: flex;
   justify-content: space-around;
-  margin: 32px;
+  margin: 36px;
   flex-wrap: wrap;
 }
+
